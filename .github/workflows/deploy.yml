@@ -46,5 +46,6 @@ jobs:
           files: |
             builddir/release_notes
             builddir/meson-dist/*.tar.xz
+            builddir/PretextSnapshot*
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
