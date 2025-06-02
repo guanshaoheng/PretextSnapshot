@@ -20,10 +20,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-#define my_string_(x) #x
-#define my_string(x) my_string_(x)
+#define my_String_(x) #x
+#define my_String(x) my_String_(x)
 
-#define PretextSnapshot_Version "PretextSnapshot Version " my_string(PV)
+#define PretextSnapshot_Version "PretextSnapshot Version " my_String(PV)
 
 #include "Header.h"
 #include "ColourMapData.cpp"
