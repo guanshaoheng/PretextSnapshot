@@ -8,7 +8,7 @@ thread_dep = dependency('threads')
 math_dep = meson.get_compiler('cpp').find_library('m', required : true)
 cpp_dep = meson.get_compiler('cpp').find_library('stdc++', required : true)
 
-base_flags = ['-O3 -ffast-math']
+base_flags = ['-O3', '-ffast-math']
 extensions = {'.avx2': ['-mavx2'], '.avx': ['-mavx'], '.sse42': ['-msse4.2'], '.sse41': ['-msse4.1']}
 
 foreach ext, flag : extensions
